@@ -1,10 +1,9 @@
-function Footer() {
-    return (
-        <footer >
-       
-            <p>&copy;  Your Company. All rights reserved.</p>
-            
-        </footer>
-    );
+import React from "react";
+
+export default function Footer() {
+  return (
+    <footer>
+      <p>Pie de página de la ferretería</p>
+    </footer>
+  );
 }
-export default Footer;

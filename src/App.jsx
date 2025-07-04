@@ -1,30 +1,27 @@
-import { useEffect, useState } from 'react';
-import { Header } from './Header';
-import Footer from './Footer';
-import UserList from './UserList';
-import './App.css';
-import axios from 'axios';
+
+import { Header } from './components/Header'
+import Footer from "./components/Footer";
+import { Section } from './components/section';
+import './App.css'
+import ferreteria from './EjemploFerreteria';
 
 function App() {
-  const [users, setUsers] = useState([]);
-  const [loading, setLoading] = useState(true);
+return (
+  <>
+  <Header title="Creando y usando props" show={true}>
+  </Header>
 
-  useEffect(() => {
-    axios.get('https://jsonplaceholder.typicode.com/users')
-      .then(response => {
-        setUsers(response.data);
-        setLoading(false);
-      });
-  }, []);
+  <section>
+    <Section />
+  </section>
+  
 
-  return (
-    <div className="App">
-      <Header />
-      <h1>Lista de Usuarios</h1>
-      {loading ? <p>Cargando usuarios...</p> : <UserList users={users} />}
-      <Footer />
-    </div>
-  );
+
+
+  <ferreteria />
+
+  <Footer/>
+  </>
+  )
 }
-
-export default App;
+export default App

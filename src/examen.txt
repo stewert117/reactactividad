@@ -1,0 +1,7 @@
+1 El manejo de imagenes en React con assets consiste en importar la imagen desde la carpeta assets usando una ruta relativa y luego utilizarla en el atributo src de una etiqueta <img>
+
+2R/ La sintaxis de la exportacion nominal es: se coloca la palabra clave export antes de la declaracion
+
+liste las sedes de la ferreteria y muestralas .
+crea mediante el cmponente card la tarjeta para los productos
+use el hook adecuado para cambiar el estado de algun componete 

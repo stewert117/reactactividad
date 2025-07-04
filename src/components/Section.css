@@ -1,0 +1,25 @@
+.cards-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+.image {
+  width: 100px;
+  height: auto;
+}
+.name {
+  font-size: 1.2em;
+  margin: 10px 0 5px 0;
+}
+.description {
+  color: #555;
+}
